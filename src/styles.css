@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .menu{
+    @apply absolute md:sticky top-0 left-0 md:left-3 bottom-0 w-72 lg:w-90 h-screen flex flex-col justify-between font-bold text-13 md:text-17 bg-white transition-all ease-linear z-20;
+  }
+
+  .contact input, .contact textarea{
+    @apply w-full text-11 md:text-sm/4 !border-none focus:ring-0 bg-brand-gray-50 rounded-3 px-4;
+  }
+
+  .contact label{
+    @apply text-11 md:text-13
+  }
+
+  .project p{
+    @apply text-xl/6 border-b border-brand-gray-300 line-clamp-1 py-2 px-6 md:px-9;
+  }
+  .radio-input:checked + div{
+    @apply absolute;
+  }
+
+  .btn-gr{
+    @apply font-bold text-sm/4 md:text-17/5 text-white bg-btn rounded-full py-2 md:py-3 px-8
+  }
+
+  .swiper-slide button{
+    @apply hover:border-brand-purple transition ease-linear p-2 md:py-2.5 md:px-4;
+  }
+
+/* tab css */
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tab.active {
+  border-color: #4849A6;
+  /* border-color: #4849A6; */
+}
+
+
+}
