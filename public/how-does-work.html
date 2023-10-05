@@ -269,7 +269,7 @@
 
     <div class="min-h-screen flex-1 md:border-l border-gray-200 pb-20">
       <!-- Menu -->
-      <div class="fixed w-full top-0 bg-white py-3 md:hidden">
+      <div class="fixed w-full top-0 bg-white py-3 md:hidden z-10">
         <button type="button" class="toggleMenu absolute left-4 top-2.5">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_326_4116)">
@@ -288,42 +288,45 @@
           <img src="img/logo.svg" alt="logo">
         </a>
       </div>
-      <!-- Title -->
-      <div class="flex items-center space-x-2.5 py-3 px-5">
-        <a href="#">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_305_6086)">
-            <path d="M23.3 15.4H10.3L15.8 9.80003C16.1 9.50003 16.1 9.10003 15.8 8.90003C15.5 8.70003 15.1 8.60003 14.9 8.90003L8.2 15.5C8.1 15.7 8 15.8 8 16C8 16.2 8.1 16.4 8.3 16.5L14.9 23.1C15 23.2 15.2 23.3 15.4 23.3C15.6 23.3 15.7 23.2 15.9 23.1C16.2 22.8 16.2 22.4 15.9 22.2L10.3 16.7H23.3C23.7 16.7 24 16.4 24 16C24 15.7 23.7 15.4 23.3 15.4Z" fill="#666666"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_305_6086">
-            <rect width="32" height="32" fill="white"/>
-            </clipPath>
-            </defs>
-           </svg>
-        </a>
-        <div class="flex items-center space-x-2">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_305_6081)">
-            <path d="M2.3 2.4C0.8 4 0 5.8 0 8C0 10.1 0.8 12 2.3 13.6C3.9 15.2 5.8 16 8 16V0C5.8 0 3.9 0.8 2.3 2.4Z" fill="#4849A6"/>
-            <path d="M16 8C16 5.8 15.2 4 13.6 2.4C12 0.8 10.1 0 8 0V16C10.2 16 12.1 15.2 13.7 13.6C15.2 12 16 10.1 16 8Z" fill="#48EBCC"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_305_6081">
-            <rect width="16" height="16" fill="white"/>
-            </clipPath>
-            </defs>
+     
+      <div class="relative mt-12 md:mt-0">
+         <!-- Title -->
+        <div class="flex items-center space-x-2.5 py-3 px-5">
+          <a href="#">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_305_6086)">
+              <path d="M23.3 15.4H10.3L15.8 9.80003C16.1 9.50003 16.1 9.10003 15.8 8.90003C15.5 8.70003 15.1 8.60003 14.9 8.90003L8.2 15.5C8.1 15.7 8 15.8 8 16C8 16.2 8.1 16.4 8.3 16.5L14.9 23.1C15 23.2 15.2 23.3 15.4 23.3C15.6 23.3 15.7 23.2 15.9 23.1C16.2 22.8 16.2 22.4 15.9 22.2L10.3 16.7H23.3C23.7 16.7 24 16.4 24 16C24 15.7 23.7 15.4 23.3 15.4Z" fill="#666666"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_305_6086">
+              <rect width="32" height="32" fill="white"/>
+              </clipPath>
+              </defs>
             </svg>
-           <h4 class="font-bold text-17/5">Qui som?</h4>             
+          </a>
+          <div class="flex items-center space-x-2">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_305_6081)">
+              <path d="M2.3 2.4C0.8 4 0 5.8 0 8C0 10.1 0.8 12 2.3 13.6C3.9 15.2 5.8 16 8 16V0C5.8 0 3.9 0.8 2.3 2.4Z" fill="#4849A6"/>
+              <path d="M16 8C16 5.8 15.2 4 13.6 2.4C12 0.8 10.1 0 8 0V16C10.2 16 12.1 15.2 13.7 13.6C15.2 12 16 10.1 16 8Z" fill="#48EBCC"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_305_6081">
+              <rect width="16" height="16" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+            <h4 class="font-bold text-17/5">Qui som?</h4>             
+          </div>
         </div>
+        <!-- image -->
+        <div class="w-full h-44 md:h-60">
+          <img src="./img/banner-llista.png" class="w-full h-full object-cover" alt="">
+        </div>
+        <p class="font-fira text-11 md:text-sm/4 text-brand-gray-200 px-5 mt-2.5 md:mt-9">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
       </div>
-      <!-- image -->
-      <div class="w-full h-44 md:h-60">
-        <img src="./img/banner-llista.png" class="w-full h-full object-cover" alt="">
-      </div>
-      <p class="font-fira text-11 md:text-sm/4 text-brand-gray-200 px-5 mt-2.5 md:mt-9">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
     </div>
   </div>
   <!-- Overlay -->

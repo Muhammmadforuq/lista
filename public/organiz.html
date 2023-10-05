@@ -270,7 +270,7 @@
 
     <div class="min-h-screen flex-1 md:border-l border-gray-200 pb-20">
       <!-- Menu -->
-      <div class="fixed w-full top-0 bg-white py-3 md:hidden">
+      <div class="fixed w-full top-0 bg-white py-3 md:hidden z-10">
         <button type="button" class="toggleMenu absolute left-4 top-2.5">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_326_4116)">
@@ -289,93 +289,95 @@
           <img src="img/logo.svg" alt="logo">
         </a>
       </div>
-      <!-- Title -->
-      <div class="flex items-center space-x-2.5 py-3 px-5">
-        <a href="#">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_305_6086)">
-            <path d="M23.3 15.4H10.3L15.8 9.80003C16.1 9.50003 16.1 9.10003 15.8 8.90003C15.5 8.70003 15.1 8.60003 14.9 8.90003L8.2 15.5C8.1 15.7 8 15.8 8 16C8 16.2 8.1 16.4 8.3 16.5L14.9 23.1C15 23.2 15.2 23.3 15.4 23.3C15.6 23.3 15.7 23.2 15.9 23.1C16.2 22.8 16.2 22.4 15.9 22.2L10.3 16.7H23.3C23.7 16.7 24 16.4 24 16C24 15.7 23.7 15.4 23.3 15.4Z" fill="#666666"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_305_6086">
-            <rect width="32" height="32" fill="white"/>
-            </clipPath>
-            </defs>
-           </svg>
-        </a>
-        <div class="flex items-center space-x-2">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_305_6081)">
-            <path d="M2.3 2.4C0.8 4 0 5.8 0 8C0 10.1 0.8 12 2.3 13.6C3.9 15.2 5.8 16 8 16V0C5.8 0 3.9 0.8 2.3 2.4Z" fill="#4849A6"/>
-            <path d="M16 8C16 5.8 15.2 4 13.6 2.4C12 0.8 10.1 0 8 0V16C10.2 16 12.1 15.2 13.7 13.6C15.2 12 16 10.1 16 8Z" fill="#48EBCC"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_305_6081">
-            <rect width="16" height="16" fill="white"/>
-            </clipPath>
-            </defs>
+      
+      <div class="relative mt-12 md:mt-0">
+          <!-- Title -->
+        <div class="flex items-center space-x-2.5 py-3 px-5">
+          <a href="#">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_305_6086)">
+              <path d="M23.3 15.4H10.3L15.8 9.80003C16.1 9.50003 16.1 9.10003 15.8 8.90003C15.5 8.70003 15.1 8.60003 14.9 8.90003L8.2 15.5C8.1 15.7 8 15.8 8 16C8 16.2 8.1 16.4 8.3 16.5L14.9 23.1C15 23.2 15.2 23.3 15.4 23.3C15.6 23.3 15.7 23.2 15.9 23.1C16.2 22.8 16.2 22.4 15.9 22.2L10.3 16.7H23.3C23.7 16.7 24 16.4 24 16C24 15.7 23.7 15.4 23.3 15.4Z" fill="#666666"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_305_6086">
+              <rect width="32" height="32" fill="white"/>
+              </clipPath>
+              </defs>
             </svg>
-           <h4 class="font-bold text-17/5">Fitxa d’organització</h4>             
-        </div>
-      </div>
-
-      <div class="w-full h-36 md:h-64">
-        <img class="w-full h-full object-cover" src="./img/project.png" alt="">
-      </div>
-
-      <!-- Organization name -->
-      <div class="flex items-center border-b border-brand-gray-300 gap-16 py-2 px-5 md:px-14">
-        <div class="flex items-center space-x-2.5">
-          <div class="w-13 aspect-square bg-brand-gray-50 rounded-full">
-            <!-- <img src=""  class="w-full h-full object-cover" alt=""> -->
+          </a>
+          <div class="flex items-center space-x-2">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_305_6081)">
+              <path d="M2.3 2.4C0.8 4 0 5.8 0 8C0 10.1 0.8 12 2.3 13.6C3.9 15.2 5.8 16 8 16V0C5.8 0 3.9 0.8 2.3 2.4Z" fill="#4849A6"/>
+              <path d="M16 8C16 5.8 15.2 4 13.6 2.4C12 0.8 10.1 0 8 0V16C10.2 16 12.1 15.2 13.7 13.6C15.2 12 16 10.1 16 8Z" fill="#48EBCC"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_305_6081">
+              <rect width="16" height="16" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+            <h4 class="font-bold text-17/5">Fitxa d’organització</h4>             
           </div>
-          <div>
-            <div class="flex items-center space-x-2">
-              <p class="font-bold text-sm">Organization name</p>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_305_5310)">
-                <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"/>
-                <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_305_5310">
-                <rect width="16" height="16" fill="white"/>
-                </clipPath>
-                </defs>
-                </svg>                
+        </div>
+
+        <div class="w-full h-36 md:h-64">
+          <img class="w-full h-full object-cover" src="./img/project.png" alt="">
+        </div>
+
+        <!-- Organization name -->
+        <div class="flex items-center border-b border-brand-gray-300 gap-16 py-2 px-5 md:px-14">
+          <div class="flex items-center space-x-2.5">
+            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full">
+              <!-- <img src=""  class="w-full h-full object-cover" alt=""> -->
             </div>
-            <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 interactions</p>
+            <div>
+              <div class="flex items-center space-x-2">
+                <p class="font-bold text-sm">Organization name</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_305_5310)">
+                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"/>
+                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_305_5310">
+                  <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                
+              </div>
+              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 interactions</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#6441A4" fill-opacity="0.9922"/>
+                <path d="M12 8.60003V12.3H10.8V8.60003H12ZM15.4 8.60003V12.3H14.2V8.60003H15.4ZM15.4 15.1L17.5 12.9V6.20002H7.40005V15.1H10.2V16.9L12 15.1H15.4ZM18.7 4.90002V13.5L15 17.2H12.2L10.4 19H8.60005V17.2H5.30005V7.40002L6.20005 5.00002H18.7V4.90002Z" fill="white" fill-opacity="0.9922"/>
+                </svg>              
+            </a>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="black"/>
+                <path d="M17.6 8.99995C16.9 9.09995 16.3 8.99995 15.7 8.79995C15.6 8.79995 15.5 8.79995 15.4 8.79995C15.3 8.89995 15.3 8.89995 15.3 8.99995V15V15.1C15.2 17.4 13.2 19.2 10.9 19.2C8.5 19.2 6.5 17.2 6.5 14.8C6.5 12.5 8.2 10.6 10.5 10.4V13.3C9.8 13.5 9.3 14.1 9.3 14.8C9.3 15.7 10 16.4 10.9 16.4C11.7 16.4 12.4 15.8 12.5 15V14.9V4.69995H14.9C15 5.09995 15.1 5.39995 15.3 5.69995C15.8 6.39995 16.7 6.69995 17.5 6.49995V8.99995H17.6Z" fill="white"/>
+                </svg>                            
+            </a>
           </div>
         </div>
-        <div class="flex items-center space-x-2">
-          <a href="#">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#6441A4" fill-opacity="0.9922"/>
-              <path d="M12 8.60003V12.3H10.8V8.60003H12ZM15.4 8.60003V12.3H14.2V8.60003H15.4ZM15.4 15.1L17.5 12.9V6.20002H7.40005V15.1H10.2V16.9L12 15.1H15.4ZM18.7 4.90002V13.5L15 17.2H12.2L10.4 19H8.60005V17.2H5.30005V7.40002L6.20005 5.00002H18.7V4.90002Z" fill="white" fill-opacity="0.9922"/>
-              </svg>              
-          </a>
-          <a href="#">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="black"/>
-              <path d="M17.6 8.99995C16.9 9.09995 16.3 8.99995 15.7 8.79995C15.6 8.79995 15.5 8.79995 15.4 8.79995C15.3 8.89995 15.3 8.89995 15.3 8.99995V15V15.1C15.2 17.4 13.2 19.2 10.9 19.2C8.5 19.2 6.5 17.2 6.5 14.8C6.5 12.5 8.2 10.6 10.5 10.4V13.3C9.8 13.5 9.3 14.1 9.3 14.8C9.3 15.7 10 16.4 10.9 16.4C11.7 16.4 12.4 15.8 12.5 15V14.9V4.69995H14.9C15 5.09995 15.1 5.39995 15.3 5.69995C15.8 6.39995 16.7 6.69995 17.5 6.49995V8.99995H17.6Z" fill="white"/>
-              </svg>                            
-          </a>
-        </div>
-      </div>
 
-      <!--  -->
-      <div class="font-fira text-[9px] text-brand-gray-200 border-b border-brand-gray-300 px-5 md:px-9 pb-5">
-        <div class="grid grid-cols-2 mt-1.5">
-          <p>Organització: la Sotana</p>
-          <p class="border-l border-brand-gray-300 pl-8">Inici del projecte: DD/MM/YYYY</p>
+        <div class="font-fira text-[9px] text-brand-gray-200 border-b border-brand-gray-300 px-5 md:px-9 pb-5">
+          <div class="grid grid-cols-2 mt-1.5">
+            <p>Organització: la Sotana</p>
+            <p class="border-l border-brand-gray-300 pl-8">Inici del projecte: DD/MM/YYYY</p>
+          </div>
+          <div class="grid grid-cols-2 mt-1.5">
+            <p>Visites acumulades: 99999999</p>
+            <p class="border-l border-brand-gray-300 pl-8">M’agrades acumulats: 99999999</p>
+          </div>
+          <p class="text-11 mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
-        <div class="grid grid-cols-2 mt-1.5">
-          <p>Visites acumulades: 99999999</p>
-          <p class="border-l border-brand-gray-300 pl-8">M’agrades acumulats: 99999999</p>
-        </div>
-        <p class="text-11 mt-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
       </div>
 
     </div>

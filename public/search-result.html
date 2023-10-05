@@ -270,7 +270,7 @@
 
     <div class="min-h-screen flex-1 md:border-l border-gray-200 pb-20">
       <!-- Menu -->
-      <div class="fixed w-full top-0 bg-white py-3 md:hidden">
+      <div class="fixed w-full top-0 bg-white py-3 md:hidden z-10">
         <button type="button" class="toggleMenu absolute left-4 top-2.5">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_326_4116)">
@@ -289,305 +289,309 @@
           <img src="img/logo.svg" alt="logo">
         </a>
       </div>
-      <!-- Title -->
-      <div class="flex items-center space-x-2.5 py-3 px-5">
-        <a href="#" class="hidden md:block">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_305_6086)">
-            <path d="M23.3 15.4H10.3L15.8 9.80003C16.1 9.50003 16.1 9.10003 15.8 8.90003C15.5 8.70003 15.1 8.60003 14.9 8.90003L8.2 15.5C8.1 15.7 8 15.8 8 16C8 16.2 8.1 16.4 8.3 16.5L14.9 23.1C15 23.2 15.2 23.3 15.4 23.3C15.6 23.3 15.7 23.2 15.9 23.1C16.2 22.8 16.2 22.4 15.9 22.2L10.3 16.7H23.3C23.7 16.7 24 16.4 24 16C24 15.7 23.7 15.4 23.3 15.4Z" fill="#666666"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_305_6086">
-            <rect width="32" height="32" fill="white"/>
-            </clipPath>
-            </defs>
-           </svg>
-        </a>
-        <div class="flex items-center space-x-2">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_305_6081)">
-            <path d="M2.3 2.4C0.8 4 0 5.8 0 8C0 10.1 0.8 12 2.3 13.6C3.9 15.2 5.8 16 8 16V0C5.8 0 3.9 0.8 2.3 2.4Z" fill="#4849A6"/>
-            <path d="M16 8C16 5.8 15.2 4 13.6 2.4C12 0.8 10.1 0 8 0V16C10.2 16 12.1 15.2 13.7 13.6C15.2 12 16 10.1 16 8Z" fill="#48EBCC"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_305_6081">
-            <rect width="16" height="16" fill="white"/>
-            </clipPath>
-            </defs>
+
+      <div class="relative mt-12 md:mt-0">
+        <!-- Title -->
+        <div class="flex items-center space-x-2.5 py-3 px-5">
+          <a href="#" class="hidden md:block">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_305_6086)">
+              <path d="M23.3 15.4H10.3L15.8 9.80003C16.1 9.50003 16.1 9.10003 15.8 8.90003C15.5 8.70003 15.1 8.60003 14.9 8.90003L8.2 15.5C8.1 15.7 8 15.8 8 16C8 16.2 8.1 16.4 8.3 16.5L14.9 23.1C15 23.2 15.2 23.3 15.4 23.3C15.6 23.3 15.7 23.2 15.9 23.1C16.2 22.8 16.2 22.4 15.9 22.2L10.3 16.7H23.3C23.7 16.7 24 16.4 24 16C24 15.7 23.7 15.4 23.3 15.4Z" fill="#666666"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_305_6086">
+              <rect width="32" height="32" fill="white"/>
+              </clipPath>
+              </defs>
             </svg>
-           <h4 class="font-bold text-17/5">Resultats de la cerca</h4>             
+          </a>
+          <div class="flex items-center space-x-2">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_305_6081)">
+              <path d="M2.3 2.4C0.8 4 0 5.8 0 8C0 10.1 0.8 12 2.3 13.6C3.9 15.2 5.8 16 8 16V0C5.8 0 3.9 0.8 2.3 2.4Z" fill="#4849A6"/>
+              <path d="M16 8C16 5.8 15.2 4 13.6 2.4C12 0.8 10.1 0 8 0V16C10.2 16 12.1 15.2 13.7 13.6C15.2 12 16 10.1 16 8Z" fill="#48EBCC"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_305_6081">
+              <rect width="16" height="16" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+            <h4 class="font-bold text-17/5">Resultats de la cerca</h4>             
+          </div>
+        </div>
+        <!-- Search cards -->
+        <div>
+          <!-- 1 -->
+          <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
+            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
+              <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <p class="font-bold text-sm">Project name</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_305_5310)">
+                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
+                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_305_5310">
+                  <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                  </defs>
+                  </svg>                
+              </div>
+              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
+            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
+              <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <p class="font-bold text-sm">Project name</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_305_5310)">
+                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
+                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_305_5310">
+                  <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                  </defs>
+                  </svg>                
+              </div>
+              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
+            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
+              <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <p class="font-bold text-sm">Project name</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_305_5310)">
+                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
+                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_305_5310">
+                  <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                  </defs>
+                  </svg>                
+              </div>
+              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
+              <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
+                <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
+              </div>
+              <div>
+                <div class="flex items-center space-x-2">
+                  <p class="font-bold text-sm">Project name</p>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_305_5310)">
+                    <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
+                    <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_305_5310">
+                    <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>                
+                </div>
+                <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
+              </div>
+          </div>
+          <!-- 5 -->
+          <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
+              <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
+                <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
+              </div>
+              <div>
+                <div class="flex items-center space-x-2">
+                  <p class="font-bold text-sm">Project name</p>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_305_5310)">
+                    <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
+                    <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_305_5310">
+                    <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>                
+                </div>
+                <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
+              </div>
+          </div>
+          <!-- 6 -->
+          <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
+              <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
+                <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
+              </div>
+              <div>
+                <div class="flex items-center space-x-2">
+                  <p class="font-bold text-sm">Project name</p>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_305_5310)">
+                    <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
+                    <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_305_5310">
+                    <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>                
+                </div>
+                <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
+              </div>
+          </div>
+          <!-- 7 -->
+          <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
+            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
+              <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <p class="font-bold text-sm">Project name</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_305_5310)">
+                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
+                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_305_5310">
+                  <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                  </defs>
+                  </svg>                
+              </div>
+              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
+            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
+              <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <p class="font-bold text-sm">Project name</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_305_5310)">
+                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
+                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_305_5310">
+                  <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                  </defs>
+                  </svg>                
+              </div>
+              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
+            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
+              <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <p class="font-bold text-sm">Project name</p>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_305_5310)">
+                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
+                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_305_5310">
+                  <rect width="16" height="16" fill="white"></rect>
+                  </clipPath>
+                  </defs>
+                  </svg>                
+              </div>
+              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
+            </div>
+          </div>
+          <!-- 10 -->
+          <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
+              <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
+                <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
+              </div>
+              <div>
+                <div class="flex items-center space-x-2">
+                  <p class="font-bold text-sm">Project name</p>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_305_5310)">
+                    <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
+                    <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_305_5310">
+                    <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>                
+                </div>
+                <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
+              </div>
+          </div>
+          <!-- 11 -->
+          <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
+              <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
+                <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
+              </div>
+              <div>
+                <div class="flex items-center space-x-2">
+                  <p class="font-bold text-sm">Project name</p>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_305_5310)">
+                    <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
+                    <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_305_5310">
+                    <rect width="16" height="16" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                    </svg>                
+                </div>
+                <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
+              </div>
+          </div>
+        </div>
+        <!-- gray card -->
+        <div class="mt-5 md:mt-11 pl-6 md:pl-20 pr-9 md:pr-14">
+          <div class="font-fira text-brand-gray-200 text-11 md:text-sm bg-brand-gray-50 rounded-3 p-7 pr-4">
+            <p>No trobes el que cercaves? 
+              <a href="#" class="inline-block text-brand-purple">Prova la cerca avançada</a>
+            </p>
+            <p class="mt-2.5 md:mt-10 pt-2">
+              T’has cercat i et trobes a faltar? Vols que t’afegim a
+              la nostra base de dades? Omple el formulari que
+              trobaràs en 
+              <a href="#" class="inline-block text-brand-purple">aquest enllaç.</a>
+            </p>
+          </div>
         </div>
       </div>
-      <!-- Search cards -->
-      <div>
-        <!-- 1 -->
-        <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
-          <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
-            <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
-          </div>
-          <div>
-            <div class="flex items-center space-x-2">
-              <p class="font-bold text-sm">Project name</p>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_305_5310)">
-                <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
-                <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
-                </g>
-                <defs>
-                <clipPath id="clip0_305_5310">
-                <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-                </defs>
-                </svg>                
-            </div>
-            <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
-          </div>
-        </div>
-        <!-- 2 -->
-        <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
-          <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
-            <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
-          </div>
-          <div>
-            <div class="flex items-center space-x-2">
-              <p class="font-bold text-sm">Project name</p>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_305_5310)">
-                <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
-                <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
-                </g>
-                <defs>
-                <clipPath id="clip0_305_5310">
-                <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-                </defs>
-                </svg>                
-            </div>
-            <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
-          </div>
-        </div>
-        <!-- 3 -->
-        <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
-          <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
-            <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
-          </div>
-          <div>
-            <div class="flex items-center space-x-2">
-              <p class="font-bold text-sm">Project name</p>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_305_5310)">
-                <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
-                <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
-                </g>
-                <defs>
-                <clipPath id="clip0_305_5310">
-                <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-                </defs>
-                </svg>                
-            </div>
-            <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
-          </div>
-        </div>
-        <!-- 4 -->
-        <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
-            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
-              <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
-            </div>
-            <div>
-              <div class="flex items-center space-x-2">
-                <p class="font-bold text-sm">Project name</p>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_305_5310)">
-                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
-                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_305_5310">
-                  <rect width="16" height="16" fill="white"></rect>
-                  </clipPath>
-                  </defs>
-                  </svg>                
-              </div>
-              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
-            </div>
-        </div>
-        <!-- 5 -->
-        <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
-            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
-              <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
-            </div>
-            <div>
-              <div class="flex items-center space-x-2">
-                <p class="font-bold text-sm">Project name</p>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_305_5310)">
-                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
-                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_305_5310">
-                  <rect width="16" height="16" fill="white"></rect>
-                  </clipPath>
-                  </defs>
-                  </svg>                
-              </div>
-              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
-            </div>
-        </div>
-        <!-- 6 -->
-        <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
-            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
-              <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
-            </div>
-            <div>
-              <div class="flex items-center space-x-2">
-                <p class="font-bold text-sm">Project name</p>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_305_5310)">
-                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
-                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_305_5310">
-                  <rect width="16" height="16" fill="white"></rect>
-                  </clipPath>
-                  </defs>
-                  </svg>                
-              </div>
-              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
-            </div>
-        </div>
-        <!-- 7 -->
-        <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
-          <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
-            <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
-          </div>
-          <div>
-            <div class="flex items-center space-x-2">
-              <p class="font-bold text-sm">Project name</p>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_305_5310)">
-                <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
-                <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
-                </g>
-                <defs>
-                <clipPath id="clip0_305_5310">
-                <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-                </defs>
-                </svg>                
-            </div>
-            <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
-          </div>
-        </div>
-        <!-- 8 -->
-        <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
-          <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
-            <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
-          </div>
-          <div>
-            <div class="flex items-center space-x-2">
-              <p class="font-bold text-sm">Project name</p>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_305_5310)">
-                <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
-                <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
-                </g>
-                <defs>
-                <clipPath id="clip0_305_5310">
-                <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-                </defs>
-                </svg>                
-            </div>
-            <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
-          </div>
-        </div>
-        <!-- 9 -->
-        <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
-          <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
-            <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
-          </div>
-          <div>
-            <div class="flex items-center space-x-2">
-              <p class="font-bold text-sm">Project name</p>
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_305_5310)">
-                <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
-                <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
-                </g>
-                <defs>
-                <clipPath id="clip0_305_5310">
-                <rect width="16" height="16" fill="white"></rect>
-                </clipPath>
-                </defs>
-                </svg>                
-            </div>
-            <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
-          </div>
-        </div>
-        <!-- 10 -->
-        <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
-            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
-              <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
-            </div>
-            <div>
-              <div class="flex items-center space-x-2">
-                <p class="font-bold text-sm">Project name</p>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_305_5310)">
-                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
-                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_305_5310">
-                  <rect width="16" height="16" fill="white"></rect>
-                  </clipPath>
-                  </defs>
-                  </svg>                
-              </div>
-              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
-            </div>
-        </div>
-        <!-- 11 -->
-        <div class="flex items-center border-b border-gray-200 space-x-2.5 py-2 px-5 md:px-14">
-            <div class="w-13 aspect-square bg-brand-gray-50 rounded-full overflow-hidden">
-              <!-- <img class="w-full h-full object-cover" src="" alt=""> -->
-            </div>
-            <div>
-              <div class="flex items-center space-x-2">
-                <p class="font-bold text-sm">Project name</p>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_305_5310)">
-                  <path d="M14 13.4L11.5 14L9.8 16L7.4 15L4.8 15.5L3.5 13.3L1.1 12.2L1.3 9.5L0 7.3L1.7 5.3L2 2.6L4.5 2L6.2 0L8.6 1L11.2 0.5L12.5 2.7L14.9 3.8L14.7 6.5L16 8.7L14.3 10.7L14 13.4Z" fill="#48EBCC"></path>
-                  <path d="M7.0001 11.6L3.7001 7.89995C3.4001 7.59995 3.4001 7.09995 3.7001 6.79995C4.0001 6.49995 4.5001 6.49995 4.8001 6.79995L7.1001 9.29995L11.5001 4.79995C11.8001 4.49995 12.3001 4.49995 12.6001 4.79995C12.9001 5.09995 12.9001 5.59995 12.6001 5.89995L7.0001 11.6Z" fill="white"></path>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_305_5310">
-                  <rect width="16" height="16" fill="white"></rect>
-                  </clipPath>
-                  </defs>
-                  </svg>                
-              </div>
-              <p class="font-fira text-brand-gray-200 text-11 mt-1">12345 followers</p>
-            </div>
-        </div>
-      </div>
-      <!-- gray card -->
-      <div class="mt-5 md:mt-11 pl-6 md:pl-20 pr-9 md:pr-14">
-        <div class="font-fira text-brand-gray-200 text-11 md:text-sm bg-brand-gray-50 rounded-3 p-7 pr-4">
-          <p>No trobes el que cercaves? 
-            <a href="#" class="inline-block text-brand-purple">Prova la cerca avançada</a>
-          </p>
-          <p class="mt-2.5 md:mt-10 pt-2">
-            T’has cercat i et trobes a faltar? Vols que t’afegim a
-            la nostra base de dades? Omple el formulari que
-            trobaràs en 
-            <a href="#" class="inline-block text-brand-purple">aquest enllaç.</a>
-          </p>
-        </div>
-      </div>
+
     </div>
   </div>
   <!-- Overlay -->

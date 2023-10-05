@@ -270,7 +270,7 @@
 
     <div class="min-h-screen flex-1 md:border-l border-gray-200 pb-20">
       <!-- Menu -->
-      <div class="fixed w-full top-0 bg-white py-3 md:hidden">
+      <div class="fixed w-full top-0 bg-white py-3 md:hidden z-10">
         <button type="button" class="toggleMenu absolute left-1 top-2.5">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_326_4116)">
@@ -289,81 +289,83 @@
           <img src="img/logo.svg" alt="logo">
         </a>
       </div>
-      <!-- Title -->
-      <div class="flex items-center space-x-2.5 py-3 px-5">
-        <a href="#">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_305_6086)">
-            <path d="M23.3 15.4H10.3L15.8 9.80003C16.1 9.50003 16.1 9.10003 15.8 8.90003C15.5 8.70003 15.1 8.60003 14.9 8.90003L8.2 15.5C8.1 15.7 8 15.8 8 16C8 16.2 8.1 16.4 8.3 16.5L14.9 23.1C15 23.2 15.2 23.3 15.4 23.3C15.6 23.3 15.7 23.2 15.9 23.1C16.2 22.8 16.2 22.4 15.9 22.2L10.3 16.7H23.3C23.7 16.7 24 16.4 24 16C24 15.7 23.7 15.4 23.3 15.4Z" fill="#666666"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_305_6086">
-            <rect width="32" height="32" fill="white"/>
-            </clipPath>
-            </defs>
-           </svg>
-        </a>
-        <div class="flex items-center space-x-2">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_305_6081)">
-            <path d="M2.3 2.4C0.8 4 0 5.8 0 8C0 10.1 0.8 12 2.3 13.6C3.9 15.2 5.8 16 8 16V0C5.8 0 3.9 0.8 2.3 2.4Z" fill="#4849A6"/>
-            <path d="M16 8C16 5.8 15.2 4 13.6 2.4C12 0.8 10.1 0 8 0V16C10.2 16 12.1 15.2 13.7 13.6C15.2 12 16 10.1 16 8Z" fill="#48EBCC"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_305_6081">
-            <rect width="16" height="16" fill="white"/>
-            </clipPath>
-            </defs>
+      <div class="relative mt-12 md:mt-0">
+        <!-- Title -->
+        <div class="flex items-center space-x-2.5 py-3 px-5">
+          <a href="#">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_305_6086)">
+              <path d="M23.3 15.4H10.3L15.8 9.80003C16.1 9.50003 16.1 9.10003 15.8 8.90003C15.5 8.70003 15.1 8.60003 14.9 8.90003L8.2 15.5C8.1 15.7 8 15.8 8 16C8 16.2 8.1 16.4 8.3 16.5L14.9 23.1C15 23.2 15.2 23.3 15.4 23.3C15.6 23.3 15.7 23.2 15.9 23.1C16.2 22.8 16.2 22.4 15.9 22.2L10.3 16.7H23.3C23.7 16.7 24 16.4 24 16C24 15.7 23.7 15.4 23.3 15.4Z" fill="#666666"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_305_6086">
+              <rect width="32" height="32" fill="white"/>
+              </clipPath>
+              </defs>
             </svg>
-           <h4 class="font-bold text-17/5">Et trobes a faltar?</h4>             
+          </a>
+          <div class="flex items-center space-x-2">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_305_6081)">
+              <path d="M2.3 2.4C0.8 4 0 5.8 0 8C0 10.1 0.8 12 2.3 13.6C3.9 15.2 5.8 16 8 16V0C5.8 0 3.9 0.8 2.3 2.4Z" fill="#4849A6"/>
+              <path d="M16 8C16 5.8 15.2 4 13.6 2.4C12 0.8 10.1 0 8 0V16C10.2 16 12.1 15.2 13.7 13.6C15.2 12 16 10.1 16 8Z" fill="#48EBCC"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_305_6081">
+              <rect width="16" height="16" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+            <h4 class="font-bold text-17/5">Et trobes a faltar?</h4>             
+          </div>
         </div>
-      </div>
 
-      <form action="#" class="contact font-fira md:px-10">
-        <div class="space-y-5 md:space-y-7">
-          <!-- Nom i cognoms -->
-          <div>
-            <label class="block mb-1">Nom i cognoms</label>
-            <input type="text" class="w-full text-sm/4 !border-none focus:ring-0 bg-brand-gray-50 rounded-3 px-4" placeholder="Escriu aquí el teu nom i cognoms">
+        <form action="#" class="contact font-fira md:px-10">
+          <div class="space-y-5 md:space-y-7">
+            <!-- Nom i cognoms -->
+            <div>
+              <label class="block mb-1">Nom i cognoms</label>
+              <input type="text" class="w-full text-sm/4 !border-none focus:ring-0 bg-brand-gray-50 rounded-3 px-4" placeholder="Escriu aquí el teu nom i cognoms">
+            </div>
+            <!-- Correu electrònic -->
+            <div>
+              <label class="block mb-1">Noms dels creadors</label>
+              <input type="text" placeholder="Escriu aquí el teu correu electrònic">
+            </div>
+            <!-- Telèfon (opcional) -->
+            <div>
+              <label class="block mb-1">Correu electrònic</label>
+              <input type="text" placeholder="Escriu aquí el teu número de telèfon">
+            </div>
+            <!-- Missatge -->
+            <div>
+              <label class="block mb-1">Missatge</label>
+              <textarea class="resize-none" name="" id="" cols="30" rows="12"
+              placeholder="El teu missatge"></textarea>
+            </div>
           </div>
-          <!-- Correu electrònic -->
-          <div>
-            <label class="block mb-1">Noms dels creadors</label>
-            <input type="text" placeholder="Escriu aquí el teu correu electrònic">
+          <div class="space-y-5 md:space-y-6 mt-6 md:mt-10">
+            <!-- setmanal -->
+            <div class="flex items-center cursor-pointer space-x-1.5">
+              <label for="setmanal" class="relative w-4 h-4 bg-brand-gray-100 rounded-full overflow-hidden">
+                <input required id="setmanal" name="menu" type="checkbox" class="hidden peer radio-input" checked>
+                <div class="block top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.45 1.47208C0.5 2.43655 0 3.60406 0 4.97462C0 6.29442 0.5 7.46193 1.45 8.47716C2.4 9.49239 3.6 10 4.95 10V0C3.6 0 2.45 0.456853 1.45 1.47208Z" fill="#4849A6"/>
+                    <path d="M9.99995 4.97462C9.99995 3.60406 9.49995 2.43655 8.49995 1.47208C7.49995 0.507614 6.34995 0 4.94995 0V10C6.29995 10 7.49995 9.49239 8.49995 8.47716C9.49995 7.46193 9.99995 6.29442 9.99995 4.97462Z" fill="#48EBCC"/>
+                    </svg>
+                </div>   
+              </label>
+              <label for="setmanal" class="block text-sm text-brand-gray-200 peer-checked:text-black">
+                He llegit i accepto la <a href="#" class="inline-block text-brand-purple">política de privacitat</a>
+              </label>
+            </div>
+            <button type="submit" class="btn-gr">
+              Envia
+            </button>
           </div>
-           <!-- Telèfon (opcional) -->
-           <div>
-            <label class="block mb-1">Correu electrònic</label>
-            <input type="text" placeholder="Escriu aquí el teu número de telèfon">
-           </div>
-           <!-- Missatge -->
-           <div>
-            <label class="block mb-1">Missatge</label>
-            <textarea class="resize-none" name="" id="" cols="30" rows="12"
-             placeholder="El teu missatge"></textarea>
-           </div>
-        </div>
-        <div class="space-y-5 md:space-y-6 mt-6 md:mt-10">
-          <!-- setmanal -->
-          <div class="flex items-center cursor-pointer space-x-1.5">
-            <label for="setmanal" class="relative w-4 h-4 bg-brand-gray-100 rounded-full overflow-hidden">
-              <input required id="setmanal" name="menu" type="checkbox" class="hidden peer radio-input" checked>
-              <div class="block top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.45 1.47208C0.5 2.43655 0 3.60406 0 4.97462C0 6.29442 0.5 7.46193 1.45 8.47716C2.4 9.49239 3.6 10 4.95 10V0C3.6 0 2.45 0.456853 1.45 1.47208Z" fill="#4849A6"/>
-                  <path d="M9.99995 4.97462C9.99995 3.60406 9.49995 2.43655 8.49995 1.47208C7.49995 0.507614 6.34995 0 4.94995 0V10C6.29995 10 7.49995 9.49239 8.49995 8.47716C9.49995 7.46193 9.99995 6.29442 9.99995 4.97462Z" fill="#48EBCC"/>
-                  </svg>
-              </div>   
-            </label>
-            <label for="setmanal" class="block text-sm text-brand-gray-200 peer-checked:text-black">
-              He llegit i accepto la <a href="#" class="inline-block text-brand-purple">política de privacitat</a>
-            </label>
-          </div>
-          <button type="submit" class="btn-gr">
-            Envia
-          </button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
   <!-- Overlay -->
